@@ -6,7 +6,7 @@ const nextConfig = {
     path: "static/images",
   },
   basePath: "/mhmdfaishal",  
-  assetPrefix: "/",  
+  assetPrefix: "",  
 };
 
 module.exports = nextConfig;
