@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Circular Std;
+  src: url("../assets/CircularStd-Book.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Circular Std";
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --toastify-toast-width: 265px;
+  --toastify-toast-min-height: 80px;
+  --toastify-font-family: "Circular Std";
+
+  --background-one: #edf2f8ca;
+  --background-two: #ffffff;
+  --secondary-background-one: #edf2f8ba;
+  --main-text-color: #2B4865;
+  --text-color-one: #2B4865;
+  --text-color-two: #6b7688;
+  --border-one: #2B4865;
+  --about-profilepic-one: #edf2f8;
+  --about-profilepic-two: #e2e6ec;
+  --jobs-jobcard-background: #ffffff;
+  --skills-card-border: #ffffff;
+  --skills-card-shadow: #6b7688;
+}
+
+[data-theme="dark"] {
+  --background-one: #2B4865;
+  --background-two: #2B4865;
+  --secondary-background-one: #256d85bc;
+  --main-text-color: #2B4865;
+  --text-color-one: #E8F9FD;
+  --text-color-two: #E8F9FD;
+  --border-one: #E8F9FD;
+  --about-profilepic-one: #E8F9FD;
+  --about-profilepic-two: #E8F9FD;
+  --jobs-jobcard-background: #2B4865;
+  --skills-card-border: #E8F9FD;
+  --skills-card-shadow: #6b7688;
+}
+
+@mixin imageSize($width, $height, $fit) {
+  width: $width;
+  height: $height;
+  object-fit: $fit;
+}
+
+@mixin flexSettings($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin sectionLayout($padding, $background) {
+  background-color: $background;
+  padding: $padding;
+}
+
+@mixin headingLayout($fontSize, $textAlign, $marginBottom, $color) {
+  font-size: $fontSize;
+  text-align: $textAlign;
+  margin-bottom: $marginBottom;
+  color: $color;
+}
+
+@mixin borderWithRadius($border, $borderRadius) {
+  border: $border;
+  border-radius: $borderRadius;
+}
+
+@mixin colorWithBackground($color, $backgroundColor) {
+  color: $color;
+  background-color: $backgroundColor;
+}
+
+@mixin lineTransform($top, $transform) {
+  top: $top;
+  transform: $transform;
+}
+
+.scroll-up {
+  @include imageSize(45px, 45px, contain);
+  @include borderWithRadius(2px solid #256D85, 50%);
+  filter: invert(0.5);
+  color: #256D85;
+  padding: 8px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@import "./navbar";
+@import "./about";
+@import "./jobs";
+@import "./projects";
+@import "./skills";
+@import "./contact";
+@import "./footer";

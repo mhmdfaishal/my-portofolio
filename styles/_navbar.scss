@@ -1,0 +1,207 @@
+.navbar {
+  @include flexSettings(row, space-between, center);
+  @include colorWithBackground(#002B5B, var(--background-one));
+  backdrop-filter: blur(5px);
+  height: 80px;
+  position: sticky;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  justify-content: center;
+  // border-bottom: 2px solid var(--border-one);
+  &_logo{
+    margin-right: auto;
+    img{
+      @include imageSize(100px, 100px, contain);
+      // border-radius: 50%;
+      margin-left: 25%;
+    }
+  }
+  &_name {
+    @include flexSettings(row, center, center);
+    flex: 0 0 25%;
+    font-size: 22px;
+    // margin-left: 20px;
+    span {
+      margin-right: 20px;
+    }
+
+    img {
+      @include imageSize(40px, 40px, contain);
+      @include borderWithRadius(2px solid var(--border-one), 50%);
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+  &_switch_mode{
+    margin-left: auto;
+    margin-right: 5%;
+  }
+
+  &_list {
+    @include flexSettings(row, center, center);
+    flex: 0 0 35%;
+
+    &_item {
+      margin-right: 15px;
+      font-size: 17px;
+      padding: 8px 14px;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.7s ease-in-out;
+      color: var(--text-color-one);
+      position: relative;
+    }
+    &_item::before {  
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+    &_item:hover::before {
+      @include colorWithBackground(#ffffff, #002B5B);
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      box-shadow: 0 2px 10px #002B5B;
+      border-radius: 20px;
+    }
+    &_item::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      inset: 0 0 0 0;
+      z-index: -1;
+      transition: transform .3s ease;
+    }
+    &_item:hover {
+      @include colorWithBackground(#ffffff, #002B5B);
+      box-shadow: 0 2px 10px #002B5B;
+    }
+  }
+}
+
+.menu {
+  width: 35px;
+  height: 25px;
+  position: relative;
+  left: 50%;
+  display: none;
+}
+
+.line {
+  position: absolute;
+  background-color: var(--text-color-one);
+  border-radius: 4px;
+  transition: 0.5s all ease-in-out;
+  width: 35px;
+  height: 4px;
+}
+
+.line-1 {
+  @include lineTransform(0, none);
+}
+
+.line-2 {
+  @include lineTransform(50%, translateY(-50%));
+}
+
+.line-3 {
+  @include lineTransform(100%, translateY(-100%));
+}
+
+.line1 {
+  @include lineTransform(0, none);
+}
+
+.line2 {
+  @include lineTransform(50%, translateY(-50%));
+}
+
+.line3 {
+  @include lineTransform(100%, translateY(-100%));
+}
+
+.check {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  width: 35px;
+  height: 25px;
+}
+
+.check:checked ~ .line-1 {
+  @include lineTransform(50%, translate(0, -50%) rotate(45deg));
+}
+
+.check:checked ~ .line-2 {
+  width: 0;
+  opacity: 0;
+}
+
+.check:checked ~ .line-3 {
+  @include lineTransform(50%, translate(0, -50%) rotate(-45deg));
+}
+
+.sidebar {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    &_name {
+      flex-basis: 0;
+      position: absolute;
+      right: 25px;
+    }
+    &_list {
+      display: none;
+    }
+    &_switch_mode{
+      // display: none;
+      margin-top: -8%;
+    }
+  }
+  .menu {
+    display: block;
+  }
+
+  .sidebar {
+    @include sectionLayout(20px, var(--background-one));
+    display: block;
+    height: calc(100vh - 80px);
+    width: 250px;
+    border-right: 2px solid var(--border-one);
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    z-index: 1000;
+    padding: 20px;
+    transition: 1.5s;
+
+    &_item {
+      @include headingLayout(18px, center, 25px, var(--text-color-one));
+      padding: 8px 14px;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.7s ease-in-out;
+      margin-top: 25px;
+      width: 200px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &_item:hover {
+      @include colorWithBackground(#ffffff, #002B5B);
+      box-shadow: 0 2px 10px #002B5B;
+    }
+  }
+}
+
+.sidebar.active {
+  left: 0;
+  transition: 1s;
+}
