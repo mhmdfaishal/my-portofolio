@@ -5,7 +5,7 @@ const nextConfig = {
     loader: "akamai",
     path: "static/images",
   },
-  basePath: "/",  
+  basePath: "/mhmdfaishal",  
   assetPrefix: "/",  
 };
 
