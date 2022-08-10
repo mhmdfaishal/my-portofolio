@@ -14,7 +14,9 @@ export const About: NextPage = () => {
       <div className="about_left">
         <h1 className="about_left_head" data-aos="slide-up">Hi, I&apos;m Faishal</h1>
         <p className="about_left_text" data-aos="slide-up">
-          Software Engineer
+          Undergraduate (Software Engineer / Backend)
+          A person who currently studying at <b>Padjadjaran University</b> majoring in <b>Computer Science</b> and He likes to find new things 
+          so He`s very interested in learning more about current technological developments, especially in the field of <b>Software Development</b>.
         </p>
         <div className="about_left_socialMedia" data-aos="zoom-in-up">
           <img
