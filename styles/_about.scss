@@ -17,6 +17,7 @@
       white-space: nowrap; /* Keeps the content on a single line */
       margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: .15em; /* Adjust as needed */
+      max-width: 9em;
       animation: typing 4.5s steps(40, end), blink-caret .75s step-end infinite;
     }
 
@@ -24,8 +25,11 @@
     &_text {
       font-size: 22px;
       color: var(--text-color-two);
-      font-style: italic;
+      // font-style: italic;
       margin-top: 10px;
+      span {
+        color: var(--text-color-three);
+      }
     }
 
     &_socialMedia {
