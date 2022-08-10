@@ -13,6 +13,9 @@
     "ts-lint": "tsc --noEmit --incremental --watch"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "aos": "^3.0.0-beta.6",
     "next": "^12.2.4",
     "react": "18.1.0",

@@ -1,12 +1,14 @@
 import "react-toastify/dist/ReactToastify.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/main.scss";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 import { useEffect } from 'react';
 import AOS from 'aos';
-
+import { config } from "@fortawesome/fontawesome-svg-core";
 import 'aos/dist/aos.css';
+config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {

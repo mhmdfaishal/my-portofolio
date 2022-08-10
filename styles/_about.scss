@@ -20,7 +20,21 @@
       max-width: 9em;
       animation: typing 4.5s steps(40, end), blink-caret .75s step-end infinite;
     }
-
+    &_resume {
+      margin-top: 3%;
+    }
+    &_resume a{
+      cursor: pointer;
+      padding: 10px 30px;
+      transition: all 0.3s;
+      color: var(--text-color-one);
+      @include borderWithRadius(1px solid var(--text-color-one), 10px);
+    }
+    &_resume a:hover{
+      @include colorWithBackground(var(--background-one), var(--text-color-one));
+      box-shadow: 0 0px 8px var(--text-color-one);
+      letter-spacing: 1px;
+    }
 
     &_text {
       font-size: 22px;

@@ -2,10 +2,13 @@ import type { NextPage } from "next";
 import github from "../assets/github.webp";
 import linkedin from "../assets/linkedin.webp";
 import instagram from "../assets/instagram.webp";
-import gmail from "../assets/gmail.webp";
-import photo from "../assets/Profile.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleRight
+} from "@fortawesome/free-solid-svg-icons";
 
 export const About: NextPage = () => {
+
   return (
     <>
       <div className="about_right">
@@ -15,7 +18,7 @@ export const About: NextPage = () => {
         <h1 className="about_left_head" data-aos="slide-up">Hi, I&apos;m Faishal</h1>
         <p className="about_left_text" data-aos="slide-up">
           <i>Undergraduate (Software Engineer / Backend)</i> <br /><br />
-          <span> A <b>Computer Science</b> student at <b>Padjadjaran University</b> who is also an Adapative &amp; Fast-Learner person and He&apos;s interested on the field of <b>Software Development</b>.</span>
+          <span> A <b>Computer Science</b> student at <b>Padjadjaran University</b> who is also an <i>Adapative &amp; Fast-Learner</i> person and He&apos;s interested on the field of <b>Software Development</b>.</span>
         </p>
         <div className="about_left_socialMedia" data-aos="zoom-in-up">
           <img
@@ -33,11 +36,9 @@ export const About: NextPage = () => {
             alt=""
             onClick={() => window.open("https://www.instagram.com/mhmdfaishaal/", "_blank")}
           />
-          {/* <img
-            src={gmail.src}
-            alt=""
-            onClick={() => window.open("mailto:haq.faishaldien@gmail.com", "_blank")}
-          /> */}
+        </div>
+        <div className="about_left_resume">
+          <a onClick={() => window.open("https://drive.google.com/file/d/1rwkWPD4iSVLMEBy2LvPrDGCPY_Fhruio/view?usp=sharing", "_blank")}>See My Resume <FontAwesomeIcon icon={faAngleRight}/></a>
         </div>
       </div>
     </>
