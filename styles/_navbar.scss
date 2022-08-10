@@ -47,13 +47,14 @@
 
     &_item {
       margin-right: 15px;
-      font-size: 17px;
+      font-size: 14px;
       padding: 8px 14px;
       border-radius: 16px;
       cursor: pointer;
       transition: all 0.7s ease-in-out;
       color: var(--text-color-one);
       position: relative;
+      text-align: center;
     }
     &_item::before {  
       transform: scaleX(0);

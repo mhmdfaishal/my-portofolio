@@ -3,12 +3,13 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import { graphcms, QUERY } from "../services";
-import { ISkills, IJobs, IProjects, Theme } from "../typings";
+import { ISkills, IJobs, IProjects, Theme, ICertificates } from "../typings";
 import { Navbar } from "../components/Navbar";
 import { About } from "../components/About";
 import { Jobs } from "../components/Jobs";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
+import { Certificates } from "../components/Certificates";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import ScrollUp from "../assets/scrollup.svg";
@@ -17,12 +18,14 @@ interface IHomeProps {
   jobs: IJobs[];
   projects: IProjects[];
   skills: ISkills[];
+  certificates: ICertificates[];
 }
 
-const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
+const Home: NextPage<IHomeProps> = ({ jobs, projects, skills, certificates }) => {
   const jobsRef = useRef<HTMLElement>(null);
   const projectsRef = useRef<HTMLElement>(null);
   const skillsRef = useRef<HTMLElement>(null);
+  const certificatesRef = useRef<HTMLElement>(null);
   const contactRef = useRef<HTMLElement>(null);
   const [theme, setTheme] = useState<Theme>("light");
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -90,6 +93,13 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
         };
         break;
 
+      case "certificates":
+        scrollObject = {
+          top: certificatesRef.current?.offsetTop! - 70,
+          behavior: "smooth",
+        };
+        break;
+
       case "contact":
         scrollObject = {
           top: contactRef.current?.offsetTop! - 70,
@@ -139,6 +149,10 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
           <Skills skills={skills} />
         </section>
 
+        <section className="certificates" ref={certificatesRef}>
+          <Certificates certificates={certificates} />
+        </section>
+
         <section className="contact" ref={contactRef}>
           <Contact theme={theme} />
         </section>
@@ -163,13 +177,14 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills }) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { skills, jobs, projects } = await graphcms.request(QUERY);
+  const { skills, jobs, projects, certificates } = await graphcms.request(QUERY);
 
   return {
     props: {
       skills,
       jobs,
       projects,
+      certificates,
     },
     revalidate: 10,
   };

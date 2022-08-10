@@ -15,6 +15,14 @@ export const QUERY = gql`
       image 
       url
     }
+    certificates(first:20, orderBy: uniqueId_ASC) {
+      uniqueId
+      organization
+      name
+      id
+      image 
+      url
+    }
     jobs(orderBy: from_DESC) {
       id
       company

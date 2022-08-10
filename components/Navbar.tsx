@@ -50,7 +50,7 @@ export const Navbar: NextPage<INavbarProps> = ({
             Works
           </p>
           <p className="navbar_list_item" onClick={() => onNavItemClick("skills")}>
-            Skills
+            Skills &amp; Certificates
           </p>
           <p className="navbar_list_item" onClick={() => onNavItemClick("contact")}>
             Contact
@@ -75,7 +75,7 @@ export const Navbar: NextPage<INavbarProps> = ({
           Works
         </p>
         <p className="sidebar_item" onClick={() => onNavItemClick("skills")}>
-          Skills
+          Skills &amp; Certificates
         </p>
         <p className="sidebar_item" onClick={() => onNavItemClick("contact")}>
           Contact

@@ -16,6 +16,15 @@ export interface ISkills {
   image: IUrl;
 }
 
+export interface ICertificates {
+  id: string;
+  uniqueId: number;
+  organization: string;
+  name:string;
+  url: string;
+  image: IUrl;
+}
+
 export interface IJobs {
   id: string;
   company: string;

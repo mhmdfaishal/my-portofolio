@@ -33,7 +33,8 @@ a {
   --main-text-color: #2B4865;
   --text-color-one: #2B4865;
   --text-color-two: #6b7688;
-  --text-color-three: #2b4865d6;
+  --text-color-three: #2B4865;
+  --text-color-four: #2B4865;
   --border-one: #2B4865;
   --about-profilepic-one: #edf2f8;
   --about-profilepic-two: #e2e6ec;
@@ -49,7 +50,8 @@ a {
   --main-text-color: #2B4865;
   --text-color-one: #E8F9FD;
   --text-color-two: #E8F9FD;
-  --text-color-three: #358fad;
+  --text-color-three: #40a7ca;
+  --text-color-four: #40a7ca;
   --border-one: #E8F9FD;
   --about-profilepic-one: #E8F9FD;
   --about-profilepic-two: #E8F9FD;
@@ -116,5 +118,6 @@ a {
 @import "./jobs";
 @import "./projects";
 @import "./skills";
+@import "./certificates";
 @import "./contact";
 @import "./footer";
