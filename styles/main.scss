@@ -16,6 +16,29 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 5px #e7e7e7; 
+    // border-radius: 10px;
+    background: #2B4865;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6b7688; 
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #40a7ca;  
+  }
 }
 
 a {
@@ -102,13 +125,13 @@ a {
 
 .scroll-up {
   @include imageSize(45px, 45px, contain);
-  @include borderWithRadius(2px solid #256D85, 50%);
-  filter: invert(0.5);
+  @include borderWithRadius(2px solid var(--text-color-four), 50%);
+  // filter: invert(0.5);
   color: #256D85;
   padding: 8px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 100px;
+  right: 30px;
   z-index: 1000;
   cursor: pointer;
 }

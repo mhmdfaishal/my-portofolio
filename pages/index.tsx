@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-script-component-in-head */
 import type { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
+import Script from 'next/script'
 import { useEffect, useRef, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import { graphcms, QUERY } from "../services";
@@ -170,6 +172,7 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills, certificates }) =>
           pauseOnHover={false}
         />
       </main>
+      <Script src="/chatwoot.js" />
     </div>
   );
 };
