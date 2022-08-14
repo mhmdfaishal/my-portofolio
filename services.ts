@@ -33,7 +33,7 @@ export const QUERY = gql`
       to
       logo
     }
-    projects(orderBy: createdAt_DESC) {
+    projects(orderBy: uniqueId_ASC) {
       id
       title
       uniqueId
