@@ -162,7 +162,12 @@
     }
     &_switch_mode{
       // display: none;
-      margin-top: -8%;
+      margin-top: -6%;
+    }
+    &_logo{
+      img{
+        margin-left: -2%;
+      }
     }
   }
   .menu {
@@ -201,7 +206,20 @@
     }
   }
 }
-
+@media only screen and (max-width: 500px) {
+  .navbar {
+    &_switch_mode{
+      margin-top: -8%;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navbar {
+    &_switch_mode{
+      margin-top: -9%;
+    }
+  }
+}
 .sidebar.active {
   left: 0;
   transition: 1s;

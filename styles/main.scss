@@ -53,6 +53,7 @@ a {
   --background-one: #edf2f8ca;
   --background-two: #ffffff;
   --secondary-background-one: #edf2f8ba;
+  --hover-secondary-background-one: #ccced5ba;
   --main-text-color: #2B4865;
   --text-color-one: #2B4865;
   --text-color-two: #6b7688;
@@ -64,12 +65,14 @@ a {
   --jobs-jobcard-background: #ffffff;
   --skills-card-border: #ffffff;
   --skills-card-shadow: #6b7688;
+  --jobs-shadow: #c4c4c4;
 }
 
 [data-theme="dark"] {
   --background-one: #2B4865;
   --background-two: #2B4865;
   --secondary-background-one: #256d85bc;
+  --hover-secondary-background-one: #1e586bbc;
   --main-text-color: #2B4865;
   --text-color-one: #E8F9FD;
   --text-color-two: #E8F9FD;
@@ -81,6 +84,7 @@ a {
   --jobs-jobcard-background: #2B4865;
   --skills-card-border: #E8F9FD;
   --skills-card-shadow: #6b7688;
+  --jobs-shadow: #2c2c2c8a;
 }
 
 @mixin imageSize($width, $height, $fit) {

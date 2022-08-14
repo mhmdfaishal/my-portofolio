@@ -29,7 +29,7 @@
         }
       }
       img {
-        @include imageSize(300px, auto, contain);
+        @include imageSize(100%, auto, contain);
         margin: 2%;
       }
       .certificate:hover{
@@ -57,9 +57,8 @@
         }
       }
       img{
-        @include imageSize(200px, auto, contain);
+        @include imageSize(100%, auto, contain);
       }
     }
   }
-  
 }

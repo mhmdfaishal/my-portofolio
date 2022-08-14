@@ -31,31 +31,34 @@
     &_cardsBox {
       @include flexSettings(row, center, normal);
       flex-wrap: wrap;
-      gap: 30px 20px;
+      gap: 35px 35px;
+      padding: 0px 50px;
 
       &_card {
-        @include sectionLayout(15px, var(--secondary-background-one));
-        @include borderWithRadius(1px solid rgba(143, 227, 207, 0), 20px);
-        width: 250px;
+        @include sectionLayout(15px 10px, var(--secondary-background-one));
+        @include borderWithRadius(1px solid rgba(143, 227, 207, 0), 15px);
+        width: 340px;
         text-align: center;
         transition: all 0.3s;
         color: var(--text-color-one);
         backdrop-filter: blur(5px);
+        cursor: pointer;
+        box-shadow: 0 10px 10px var(--jobs-shadow);
         &_img {
-          @include imageSize(200px, 120px, fill);
+          @include imageSize(90%, 160px, fill);
           transition: all 0.5s;
-          border-radius: 18px;
+          border-radius: 5px;
         }
 
         &_title {
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 600;
           margin-bottom: 10px;
           margin-top: 20px;
         }
 
         &_description {
-          font-size: 16px;
+          font-size: 12px;
           word-spacing: 1px;
         }
 
@@ -66,7 +69,7 @@
             @include borderWithRadius(1px solid var(--text-color-one), 5px);
             display: inline-flex;
             margin: 3px 5px 3px -1px;
-            font-size: 12px;
+            font-size: 10px;
             padding: 4px;
             color: var(--text-color-one);
             font-weight: 600;
@@ -89,11 +92,12 @@
       }
 
       &_card:hover {
-        box-shadow: 0 2px 10px #6b7688;
+        transform: translateY(0) scale(1.1) !important;
+        background-color: var(--hover-secondary-background-one) !important;
       }
 
       &_card:hover &_card_img {
-        transform: translateY(0) scale(1.2);
+        transform: translateY(0) scale(1.1);
       }
     }
   }
@@ -105,4 +109,26 @@
 
 .activeTag {
   @include colorWithBackground(#ffffff, #256D85);
+}
+
+@media screen and (max-width: 410px) {
+  .projects {
+    &_filter {
+      &_cardsBox {
+        padding: 0px 30px;
+        &_card {
+          &_img {
+            @include imageSize(90%, 40%, fill);
+          }
+          &_title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 20px;
+          }
+        }
+      }
+
+    }
+  }
 }

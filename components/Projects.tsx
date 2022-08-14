@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { IProjects } from "../typings";
-import Github from "../assets/github.webp";
-import Web from "../assets/www.png";
+// import Github from "../assets/github.webp";
+// import Web from "../assets/www.png";
 import { useEffect, useState } from "react";
 
 interface IProjectsProps {
@@ -71,7 +71,7 @@ export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
         </div>
         <div className="projects_filter_cardsBox">
           {filteredProjects?.map(project => (
-            <div key={project?.id} className="projects_filter_cardsBox_card" data-aos="zoom-out-up">
+            <div key={project?.id} className="projects_filter_cardsBox_card" data-aos="zoom-out-up" onClick={() => window.open(project?.demoLink, "_blank")}>
               <img src={project?.image?.url} alt="" className="projects_filter_cardsBox_card_img" />
               <p className="projects_filter_cardsBox_card_title">{project?.title}</p>
               <div className="projects_filter_cardsBox_card_techStack">
@@ -89,7 +89,7 @@ export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
                 })}
               </div>
               <p className="projects_filter_cardsBox_card_description">{project?.description}</p>
-              <div className="projects_filter_cardsBox_card_links">
+              {/* <div className="projects_filter_cardsBox_card_links">
                 <img
                   src={Github.src}
                   alt=""
@@ -103,7 +103,7 @@ export const Projects: NextPage<IProjectsProps> = ({ projects }) => {
                     onClick={() => window.open(project?.demoLink, "_blank")}
                   />
                 )}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
