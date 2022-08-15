@@ -22,13 +22,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-HFH09469DM`}
       />
       <Script id="google-analytics-script" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
            gtag('js', new Date());
-           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');`}
+           gtag('config', 'G-HFH09469DM');`}
       </Script>
       <Component {...pageProps} />
     </>
