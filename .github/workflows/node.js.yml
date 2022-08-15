@@ -30,7 +30,7 @@ jobs:
     - name: Build
       run: npm run build
       env:
-        NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: "G-HFH09469DM"
+        NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID }}
     - run: npm run export
     - run: touch ./out/.nojekyll
     - name: Deploy 🚀
