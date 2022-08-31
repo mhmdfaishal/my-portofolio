@@ -23,7 +23,7 @@ export const QUERY = gql`
       image 
       url
     }
-    jobs(orderBy: from_DESC) {
+    jobs(orderBy: from_ASC) {
       id
       company
       designation
