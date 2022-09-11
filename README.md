@@ -2,4 +2,3 @@
 
 
 <h2 align="center">Built with Next Js & TypeScript at core.</h2>
-
