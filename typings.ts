@@ -1,5 +1,7 @@
 export interface IUrl {
   url: string;
+  url_dark: string;
+  url_light: string;
 }
 
 export interface IText {
