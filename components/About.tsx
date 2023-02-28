@@ -38,7 +38,7 @@ export const About: NextPage = () => {
           />
         </div>
         <div className="about_left_resume">
-          <a onClick={() => window.open("https://drive.google.com/file/d/137ueXN0yXYhNsggY4NGUPPAwfeGF7m1Y/view?usp=sharing", "_blank")}>See My Resume <FontAwesomeIcon icon={faAngleRight}/></a>
+          <a onClick={() => window.open("https://drive.google.com/file/d/18OycPCyX2OxSAyED7kyGLmNg6pm1gNa0/view?usp=sharing", "_blank")}>See My Resume <FontAwesomeIcon icon={faAngleRight}/></a>
         </div>
       </div>
     </>
