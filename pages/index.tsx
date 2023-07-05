@@ -126,7 +126,7 @@ const Home: NextPage<IHomeProps> = ({ jobs, projects, skills, certificates }) =>
         />
         <meta
           name="description"
-          content="Hey, I'm Faishal a Software Developer from Indonesia. Here's my portfolio where you can see all my projects, blogs, and achievements."
+          content="Hey, I'm Faishal a Software Developer from Indonesia. Here's my portfolio where you can see all my projects, experience, and achievements."
         />
         <meta name="author" content="Muhammad Faishal Dienul Haq" />
         <link rel="icon" href="/logos_ico.ico" />
