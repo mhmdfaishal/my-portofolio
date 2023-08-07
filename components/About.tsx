@@ -17,8 +17,8 @@ export const About: NextPage = () => {
       <div className="about_left">
         <h1 className="about_left_head" data-aos="slide-up">Hi, I&apos;m Faishal</h1>
         <p className="about_left_text" data-aos="slide-up">
-          <i>Undergraduate (Software Engineer / Backend)</i> <br /><br />
-          <span> A <b>Computer Science</b> student at <b>Padjadjaran University</b> who is also an <i>Adaptive &amp; Fast-Learner</i> person and He&apos;s interested on <b>Software Development</b>.</span>
+          <i>Software Engineer</i> <br /><br />
+          <span> A Fresh Graduate <b>Computer Science</b> student at <b>Padjadjaran University</b> who is also an <i>Adaptive &amp; Fast-Learner</i> person and He's a <b>dedicated</b> and <b>passionate</b> person in building innovation in the field of <b>Software Development</b>.</span>
         </p>
         <div className="about_left_socialMedia" data-aos="zoom-in-up">
           <img
@@ -38,7 +38,7 @@ export const About: NextPage = () => {
           />
         </div>
         <div className="about_left_resume">
-          <a onClick={() => window.open("https://drive.google.com/file/d/18OycPCyX2OxSAyED7kyGLmNg6pm1gNa0/view?usp=sharing", "_blank")}>See My Resume <FontAwesomeIcon icon={faAngleRight}/></a>
+          <a onClick={() => window.open("https://drive.google.com/file/d/1clO_4e2EqXc6PyAyORN0-4CVqsWH9RpX/view?usp=sharing", "_blank")}>See My Resume <FontAwesomeIcon icon={faAngleRight}/></a>
         </div>
       </div>
     </>
