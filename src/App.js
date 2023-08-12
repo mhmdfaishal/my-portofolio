@@ -77,14 +77,14 @@ function App() {
 					<Suspense fallback={""}>
 						<Routes>
 							<Route path="/" element={<Home projects={data.projects.slice(0,6)} />} />
-							<Route path="projects" element={<Projects projects={data.projects}  />} />
-							<Route path="certifications" element={<Certifications certifications={data.certificates}  />} />
+							<Route path="/projects" element={<Projects projects={data.projects}  />} />
+							<Route path="/certifications" element={<Certifications certifications={data.certificates}  />} />
 							<Route
-								path="projects/:id"
+								path="/projects/:id"
 								element={<ProjectSingle projects={data.projects} />}
 							/>
 
-							<Route path="about" element={<About projects={data.projects} courses={data.certificates} jobs={data.jobs} />} />
+							<Route path="/about" element={<About projects={data.projects} courses={data.certificates} jobs={data.jobs} />} />
 						</Routes>
 					</Suspense>
 					<AppFooter />
