@@ -65,6 +65,16 @@ const ProjectInfo = ({project}) => {
 						}
 					</p>
 				</div>
+				{project.demoLink !== '' ?
+					<div className="mb-7">
+						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
+							Demo Link
+						</p>
+						<a href={project.demoLink} rel="noreferrer" target="_blank" className="font-general-regular text-primary-dark dark:text-ternary-light hover:underline hover:text-indigo-500 dark:hover:text-indigo-400">
+							{project.demoLink}
+						</a>
+					</div>
+				: ''}
 			</div>
 
 			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
