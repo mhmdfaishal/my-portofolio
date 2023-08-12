@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm ci --force
     - name: Build
-      run: npm run deploy
+      run: npm run build
       env:
         GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
     - name: Deploy 🚀
