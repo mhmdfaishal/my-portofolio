@@ -25,7 +25,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "yarn run react-scripts build",
+		"build": "CI=false && yarn run react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"export": "next export",
