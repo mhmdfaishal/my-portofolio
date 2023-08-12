@@ -14,7 +14,7 @@ const AboutExperienceSingle = ({ designation,from,to, title, image, linkedin, we
 					alt={title}
 				/>				
 				<div className="flex flex-col items-center">
-					<h1 className="text-lg-sm sm:text-sm md:text-lg text-navy font-bold dark:text-white ml-4">
+					<h1 className="text-lg-sm sm:text-sm md:text-lg text-navy font-bold dark:text-white">
 						{designation}
 					</h1>
 					<div className="flex mt-2">
