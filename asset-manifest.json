@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46add8ae.chunk.css",
+    "main.js": "/static/js/main.fc8b306b.chunk.js",
+    "main.js.map": "/static/js/main.fc8b306b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e1cae09c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e1cae09c.js.map",
+    "static/js/2.89f4c95c.chunk.js": "/static/js/2.89f4c95c.chunk.js",
+    "static/js/2.89f4c95c.chunk.js.map": "/static/js/2.89f4c95c.chunk.js.map",
+    "static/js/3.eb3e9e9c.chunk.js": "/static/js/3.eb3e9e9c.chunk.js",
+    "static/js/3.eb3e9e9c.chunk.js.map": "/static/js/3.eb3e9e9c.chunk.js.map",
+    "static/js/4.142f3227.chunk.js": "/static/js/4.142f3227.chunk.js",
+    "static/js/4.142f3227.chunk.js.map": "/static/js/4.142f3227.chunk.js.map",
+    "static/js/5.e8db3c26.chunk.js": "/static/js/5.e8db3c26.chunk.js",
+    "static/js/5.e8db3c26.chunk.js.map": "/static/js/5.e8db3c26.chunk.js.map",
+    "static/js/6.e140bfcb.chunk.js": "/static/js/6.e140bfcb.chunk.js",
+    "static/js/6.e140bfcb.chunk.js.map": "/static/js/6.e140bfcb.chunk.js.map",
+    "static/js/7.0e6e03b2.chunk.js": "/static/js/7.0e6e03b2.chunk.js",
+    "static/js/7.0e6e03b2.chunk.js.map": "/static/js/7.0e6e03b2.chunk.js.map",
+    "static/js/8.a4e5808c.chunk.js": "/static/js/8.a4e5808c.chunk.js",
+    "static/js/8.a4e5808c.chunk.js.map": "/static/js/8.a4e5808c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.46add8ae.chunk.css.map": "/static/css/main.46add8ae.chunk.css.map",
+    "static/js/2.89f4c95c.chunk.js.LICENSE.txt": "/static/js/2.89f4c95c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/GeneralSans-VariableItalic.e4ae865b.woff",
+    "static/media/PandeglangGroup.de2dc85b.png": "/static/media/PandeglangGroup.de2dc85b.png",
+    "static/media/SPP Corp.d04d7793.png": "/static/media/SPP Corp.d04d7793.png",
+    "static/media/campuspedia.856b9d1d.png": "/static/media/campuspedia.856b9d1d.png",
+    "static/media/developer-dark.3f07bd13.svg": "/static/media/developer-dark.3f07bd13.svg",
+    "static/media/developer.ef097afb.svg": "/static/media/developer.ef097afb.svg",
+    "static/media/ibrahim.a058e768.png": "/static/media/ibrahim.a058e768.png",
+    "static/media/logo-dark.f029bb8c.svg": "/static/media/logo-dark.f029bb8c.svg",
+    "static/media/logo-light.63134124.svg": "/static/media/logo-light.63134124.svg",
+    "static/media/persipan_logo.17120413.png": "/static/media/persipan_logo.17120413.png",
+    "static/media/profile.65343fd2.jpg": "/static/media/profile.65343fd2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1cae09c.js",
+    "static/js/2.89f4c95c.chunk.js",
+    "static/css/main.46add8ae.chunk.css",
+    "static/js/main.fc8b306b.chunk.js"
+  ]
+}
