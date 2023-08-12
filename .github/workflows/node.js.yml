@@ -30,10 +30,8 @@ jobs:
     - name: Build
       run: npm run build
       env:
-        NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID }}
-    - run: npm run export
-    - run: touch ./out/.nojekyll
+        GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-          folder: out # The folder the action should deploy.
+          folder: build # The folder the action should deploy.
