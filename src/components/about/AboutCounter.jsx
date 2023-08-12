@@ -2,9 +2,9 @@ import { useCountUp } from 'react-countup';
 import CounterItem from './CounterItem';
 
 const AboutCounter = ({projects, courses}) => {
-	useCountUp({ ref: 'experienceCounter', end: 3, duration: 2 });
-	useCountUp({ ref: 'projectsCounter', end: projects.length, duration: 2 });
-	useCountUp({ ref: 'coursesCounter', end: courses.length, duration: 2 });
+	useCountUp({ ref: 'experienceCounter', end: 2, duration: 3 });
+	useCountUp({ ref: 'projectsCounter', end: projects.length, duration: 3 });
+	useCountUp({ ref: 'coursesCounter', end: courses.length, duration: 3 });
 
 	return (
 		<div className="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
