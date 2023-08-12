@@ -30,7 +30,7 @@ const AppFooter = () => {
 			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
 
 				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-					<p className="text-3xl sm:text-4xl text-center text-primary-dark dark:text-primary-light mb-5">
+					<p className="text-3xl sm:text-4xl font-bold text-center text-primary-dark dark:text-primary-light mb-5">
 						Reach Me
 					</p>
 					<div className='flex flex-col gap-4 justify-center'>
@@ -47,8 +47,8 @@ const AppFooter = () => {
 								haq.faishaldien@gmail.com
 							</h1>
 						</a>
-						<p className="text-3xl sm:text-3xl text-center text-primary-dark dark:text-primary-light mb-5">
-							Connect with Me
+						<p className="text-3xl sm:text-3xl text-center font-bold text-primary-dark dark:text-primary-light mb-3 mt-4">
+							Let's Connect!
 						</p>
 						<ul className="flex gap-4 sm:gap-8 justify-center">
 							{socialLinks.map((link) => (
