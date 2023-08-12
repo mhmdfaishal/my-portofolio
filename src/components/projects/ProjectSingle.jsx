@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 const ProjectSingle = ({ id, title, category, image, techStack }) => {
 	return (
 		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1, delay: 1 }}
+			initial={{ opacity: 0, y: -180 }}
+			animate={{ opacity: 1, y: 0 }}
 			transition={{
 				ease: 'easeInOut',
 				duration: 0.7,
-				delay: 0.15,
+				delay: 0.20,
 			}}
 		>
 			<Link to={"/projects/" + id} aria-label="Single Project">
