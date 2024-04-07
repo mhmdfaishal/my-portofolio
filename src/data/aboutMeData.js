@@ -1,7 +1,7 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: "An Undergraduate Computer Science student at Padjadjaran University who is also an Adaptive & Fast-Learner person and He's a dedicated and passionate person in learning new things. He has strong interest in backend development",
+		bio: "A Fresh Graduate Computer Science student at Padjadjaran University who is also an Adaptive & Fast-Learner person and He's a dedicated and passionate person in learning new things. He has strong interest in backend development",
 	},
 	{
 		id: 2,
