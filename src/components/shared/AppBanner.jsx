@@ -65,7 +65,7 @@ const AppBanner = () => {
 				>
 					<a
 						download="CV_Muhammad Faishal Dienul Haq.pdf"
-						href="https://drive.google.com/file/d/1EqzuJSGdSZXhO_fq9cBTWPW6_tpj1LO2/view?usp=sharing"
+						href="https://drive.google.com/file/d/1SXVUYWNY1N7DaADmYvNDF3acBUgAYufa/view?usp=sharing"
 						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-navy-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-navy hover:text-white duration-500"
 						aria-label="Download Resume"
 						target='_blank'
